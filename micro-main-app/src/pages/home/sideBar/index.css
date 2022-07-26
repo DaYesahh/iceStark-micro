@@ -1,0 +1,43 @@
+.side-bar {
+    width: 200px;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #030303;
+}
+
+@keyframes fade {
+    from {
+        background: linear-gradient(white 50%, rgb(42, 40, 40) 50%);
+        background-size: 100% 15px;
+    }
+    50% {
+        background: linear-gradient(white 50%, #8d8383 50%);
+        background-size: 100% 15px;
+    }
+    to {
+        background: linear-gradient(white 50%, rgb(42, 40, 40) 50%);
+        background-size: 100% 15px;
+    }
+}
+
+.list-item {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 12px;
+    border-bottom: 1px solid #030303;
+    background-color: blue;
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.adver-insert {
+    height: calc(100% - 32px);
+    font-size: 48px;
+    background: linear-gradient(white 50%, rgb(42, 40, 40) 50%);
+    background-size: 100% 15px;
+    animation: fade 2000ms infinite ease-in-out;
+    color: red;
+}
