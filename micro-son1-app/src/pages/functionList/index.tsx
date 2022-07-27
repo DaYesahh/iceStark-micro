@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './index.css';
-import { useNavigate, Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { store } from '@ice/stark-data';
 
 const FunctionList = () => {
 

@@ -12,9 +12,7 @@ const Home = () => {
             <div className='home-title'>欢迎来到这个书店</div>
             <div className='home-layout'>
                 <SideBar />
-                {
-                    location.pathname === "/son1" ? (<Container />) : (<Outlet />)
-                }
+                <Outlet />
             </div>
         </div>
     );
